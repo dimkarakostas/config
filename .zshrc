@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/jim/.oh-my-zsh
+export EDITOR=vim
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -68,6 +69,19 @@ rml () {
     rm "$*"
     ls -la
 }
+
+alias -s py=vim
+alias -s txt=vim
+alias -s log=vim
+alias -s html=vim
+alias -s php=vim
+alias -s css=vim
+alias -s js=vim
+alias -s sql=vim
+alias -s cpp=vim
+alias -s c=vim
+alias -s h=vim
+alias -s out="tail -f"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
