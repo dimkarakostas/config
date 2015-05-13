@@ -62,12 +62,17 @@ mkcd () {
 
 cdl () {
     cd "$*"
-    ls -la
+    ls -al
 }
 
 rml () {
     rm "$*"
-    ls -la
+    ls -al
+}
+
+rmr () {
+    rm -r "$*"
+    ls -al
 }
 
 alias -s py=vim

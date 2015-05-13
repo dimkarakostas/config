@@ -10,7 +10,7 @@ set autoindent smartindent
 set gdefault hlsearch incsearch showmatch
 
 " Tab equals 4 spaces
-set expandtab smarttab softtabstop=4
+set expandtab smarttab softtabstop=4 shiftwidth=4
 
 " Enable mouse usage
 set mouse=a
