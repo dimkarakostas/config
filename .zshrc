@@ -112,3 +112,7 @@ alias -s out="tail -f"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+function google; {
+    firefox "http://www.google.com/search?q=`url-encode "${(j: :)@}"`"
+}
