@@ -1,4 +1,4 @@
-" set backspace=2
+set backspace=2
 
 " Ignore case when searching, enable smart search
 set ignorecase smartcase
@@ -62,3 +62,7 @@ nnoremap <silent> <C-t> :tabnew<CR>
 set nohidden
 
 syntax on
+
+" LaTeX stuff
+
+autocmd BufRead,BufNewFile *.tex set textwidth=80

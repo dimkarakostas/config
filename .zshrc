@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/jim/.oh-my-zsh
+export ZSH=/home/dimitris/.oh-my-zsh
 export EDITOR=vim
 
 # Set name of the theme to load.
@@ -70,11 +70,6 @@ rml () {
     ls -al
 }
 
-rmr () {
-    rm -r "$*"
-    ls -al
-}
-
 alias -s py=vim
 alias -s txt=vim
 alias -s log=vim
@@ -86,6 +81,7 @@ alias -s sql=vim
 alias -s cpp=vim
 alias -s c=vim
 alias -s h=vim
+alias -s tex=vim
 alias -s out="tail -f"
 
 # You may need to manually set your language environment
