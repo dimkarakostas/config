@@ -1,0 +1,12 @@
+[user]
+	name = Dimitrios Karakostas
+	email = dimit.karakostas@gmail.com
+	signingkey = A339D2E9
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h %Creset -­%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an> %Creset' --abbrev-commit
+[core]
+	editor = vim
+[color]
+	ui = true
+[format]
+	pretty = full

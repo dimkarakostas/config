@@ -1,4 +1,6 @@
 set backspace=2
+filetype plugin on
+syntax on
 
 " Ignore case when searching, enable smart search
 set ignorecase smartcase
@@ -61,8 +63,21 @@ nnoremap <silent> <C-t> :tabnew<CR>
 " Remove the buffer when closing tabs
 set nohidden
 
-syntax on
-
 " LaTeX stuff
-
 autocmd BufRead,BufNewFile *.tex set textwidth=80
+
+" Tab autocompletes
+function! Mosh_Tab_Or_Complete()
+    if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+        return "\<C-N>"
+    else
+        return "\<Tab>"
+endfunction
+vmap C :s/^/\/\/<cr>gv:s/^\/\/\/\/<cr>gv:s/^<cr>:noh<cr>
+:inoremap <Tab> <C-R>=Mosh_Tab_Or_Complete()<CR>
+
+" Flake8
+autocmd BufWritePost *.py call Flake8()
+
+" Pathogen
+execute pathogen#infect()
