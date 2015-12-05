@@ -61,10 +61,10 @@ autocmd BufWrite * :call DeleteTrailingWS()
 map <Leader>w :call iceweasel ()<CR>
 
 " Next Tab
-nnoremap <silent> <C-Right> :tabnext<CR>
+nnoremap <silent> <C-E> :tabnext<CR>
 
 " Previous Tab
-nnoremap <silent> <C-Left> :tabprevious<CR>
+nnoremap <silent> <C-R> :tabprevious<CR>
 
 " New Tab
 nnoremap <silent> <C-t> :tabnew<CR>
