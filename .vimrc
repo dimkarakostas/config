@@ -64,7 +64,7 @@ map <Leader>w :call iceweasel ()<CR>
 nnoremap <silent> <C-E> :tabnext<CR>
 
 " Previous Tab
-nnoremap <silent> <C-R> :tabprevious<CR>
+nnoremap <silent> <C-D> :tabprevious<CR>
 
 " New Tab
 nnoremap <silent> <C-t> :tabnew<CR>
