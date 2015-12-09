@@ -31,9 +31,10 @@ export INFOPATH="$HOME/.linuxbrew/info:$INFOPATH"
 
 source $ZSH/oh-my-zsh.sh
 
-mkcd () {
+mkcdl () {
     mkdir -p "$*"
     cd "$*"
+    ls -al
 }
 
 cdl () {
