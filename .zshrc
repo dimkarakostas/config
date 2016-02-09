@@ -39,10 +39,9 @@ mkcdl () {
 
 cdl () {
     cd "$*"
-    ls -al
+    la
 }
 
-alias -s py=vim
 alias -s txt=vim
 alias -s log=vim
 alias -s html=vim
