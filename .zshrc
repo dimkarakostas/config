@@ -42,6 +42,14 @@ cdl () {
     la
 }
 
+update () {
+    sudo apt-get update
+}
+
+upgrade () {
+    sudo apt-get upgrade
+}
+
 alias -s txt=vim
 alias -s log=vim
 alias -s html=vim
