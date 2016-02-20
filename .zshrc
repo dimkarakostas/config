@@ -50,6 +50,10 @@ upgrade () {
     sudo apt-get upgrade
 }
 
+install () {
+    sudo apt-get install "$*"
+}
+
 alias -s txt=vim
 alias -s log=vim
 alias -s html=vim
