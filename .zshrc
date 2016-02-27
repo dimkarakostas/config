@@ -77,6 +77,10 @@ alias -s jpg=eog
 alias -s bmp=eog
 alias -s pdf=evince
 
+# Add completions
+fpath=(~/.zsh/completions $fpath)
+autoload -U compinit && compinit
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
