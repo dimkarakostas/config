@@ -62,7 +62,7 @@ install () {
 
 alias -s txt=vim
 alias -s log=vim
-alias -s html=vim
+alias -s html=sensible-browser
 alias -s php=vim
 alias -s css=vim
 alias -s js=vim
