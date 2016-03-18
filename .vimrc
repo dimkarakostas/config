@@ -25,6 +25,9 @@ set noerrorbells novisualbell
 set t_vb=
 set tm=500
 
+" Remap escape key
+inoremap jj <ESC>
+
 " Treat long lines as break lines
 nnoremap j gj
 nnoremap k gk
@@ -88,5 +91,4 @@ vmap C :s/^/\/\/<cr>gv:s/^\/\/\/\/<cr>gv:s/^<cr>:noh<cr>
 " Flake8
 autocmd BufWritePost *.py call Flake8()
 
-" Pathogen
 execute pathogen#infect()
