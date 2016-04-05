@@ -15,7 +15,7 @@ set gdefault hlsearch incsearch showmatch
 set expandtab smarttab softtabstop=4 shiftwidth=4
 
 " Enable mouse usage
-set mouse=a
+" set mouse=a
 
 " Line Numbers
 set number
