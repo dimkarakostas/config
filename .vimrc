@@ -73,6 +73,10 @@ nnoremap <silent> <C-D> :tabnext<CR>
 " Previous Tab
 nnoremap <silent> <C-E> :tabprevious<CR>
 
+" Move tab right/left
+nnoremap <silent> <C-Right> :execute 'silent! tabmove ' . (tabpagenr())<CR>
+nnoremap <silent> <C-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+
 " New Tab
 nnoremap <silent> <C-t> :tabnew<CR>
 
