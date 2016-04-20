@@ -28,10 +28,6 @@ set tm=500
 " Remap escape key
 inoremap jj <ESC>
 
-" Go to beginning of line with #
-nnoremap 0 #
-nnoremap # 0
-
 " Treat long lines as break lines
 nnoremap j gj
 nnoremap k gk
