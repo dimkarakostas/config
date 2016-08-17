@@ -56,6 +56,10 @@ upgrade () {
     sudo apt-get upgrade
 }
 
+up () {
+    sudo apt-get update && sudo apt-get upgrade
+}
+
 install () {
     sudo apt-get install "$*"
 }
