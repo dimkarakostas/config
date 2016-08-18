@@ -80,6 +80,7 @@ alias -s png=eog
 alias -s jpg=eog
 alias -s bmp=eog
 alias -s pdf=evince
+alias -s kdbx=keepassx
 
 # Add completions
 fpath=(~/.zsh/completions $fpath)
