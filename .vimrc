@@ -96,3 +96,6 @@ vmap C :s/^/\/\/<cr>gv:s/^\/\/\/\/<cr>gv:s/^<cr>:noh<cr>
 autocmd BufWritePost *.py call Flake8()
 
 execute pathogen#infect()
+
+let g:email = "dimit.karakostas@gmail.com"
+let g:username = "Dimitris Karakostas"
