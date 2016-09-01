@@ -82,6 +82,9 @@ set nohidden
 " LaTeX stuff
 autocmd BufRead,BufNewFile *.tex set textwidth=80
 
+" Markdown stuff
+autocmd BufRead,BufNewFile *.md set textwidth=80
+
 " Tab autocompletes
 function! Mosh_Tab_Or_Complete()
     if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
