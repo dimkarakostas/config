@@ -56,6 +56,14 @@ upgrade () {
     sudo apt-get upgrade
 }
 
+autoremove () {
+    sudo apt-get autoremove
+}
+
+autoclean () {
+    sudo apt-get autoclean
+}
+
 up () {
     sudo apt-get update && sudo apt-get upgrade
 }
