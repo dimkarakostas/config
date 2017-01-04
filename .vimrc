@@ -43,6 +43,8 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+nnoremap <silent> <C-Y> :vsp<CR>
+
 " Return to last edit position when opening files
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
