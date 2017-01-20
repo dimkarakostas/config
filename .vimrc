@@ -34,6 +34,9 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 
+nnoremap ; :
+nnoremap : ;
+
 " Split remapping
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
