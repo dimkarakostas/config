@@ -106,7 +106,7 @@ else
 fi
 
 function google; {
-    firefox "http://www.google.com/search?q=`url-encode "${(j: :)@}"`"
+    sensible-browser "http://www.google.com/search?q=`url-encode "${(j: :)@}"`"
 }
 
 bindkey '^R' history-incremental-search-backward
