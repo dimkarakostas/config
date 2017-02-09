@@ -76,6 +76,10 @@ install () {
     sudo apt-get install "$*"
 }
 
+distup () {
+    sudo apt-get dist-upgrade
+}
+
 alias -s txt=vim
 alias -s log=vim
 alias -s html=sensible-browser
