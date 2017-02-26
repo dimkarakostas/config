@@ -80,6 +80,10 @@ distup () {
     sudo apt-get dist-upgrade
 }
 
+fmanager () {
+    xdg-open "$*"
+}
+
 alias -s txt=vim
 alias -s log=vim
 alias -s html=sensible-browser
