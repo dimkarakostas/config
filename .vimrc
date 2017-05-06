@@ -61,6 +61,10 @@ set splitright
 
 nnoremap <silent> <C-Y> :vsp<CR>
 
+" .. shortcut opens new tab with YouCompleteMe's GoTo
+nnoremap .. :YcmCompleter GoTo<CR>
+let g:ycm_goto_buffer_command = 'new-tab'
+
 " Return to last edit position when opening files
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
