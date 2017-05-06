@@ -4,6 +4,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+let g:ycm_confirm_extra_conf = 0
+set completeopt-=preview
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 " </Vundle>
@@ -99,16 +102,6 @@ autocmd BufRead,BufNewFile *.tex set textwidth=80
 
 " Markdown stuff
 autocmd BufRead,BufNewFile *.md set textwidth=80
-
-" Tab autocompletes
-function! Mosh_Tab_Or_Complete()
-    if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-        return "\<C-N>"
-    else
-        return "\<Tab>"
-endfunction
-vmap C :s/^/\/\/<cr>gv:s/^\/\/\/\/<cr>gv:s/^<cr>:noh<cr>
-:inoremap <Tab> <C-R>=Mosh_Tab_Or_Complete()<CR>
 
 " Flake8
 autocmd BufWritePost *.py call Flake8()
