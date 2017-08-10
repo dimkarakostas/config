@@ -84,6 +84,10 @@ fmanager () {
     xdg-open "$*"
 }
 
+passgen () {
+    date +%s | sha256sum | base64 | head -c "$*"
+}
+
 alias -s txt=vim
 alias -s log=vim
 alias -s html=sensible-browser
