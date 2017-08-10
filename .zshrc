@@ -106,6 +106,9 @@ alias -s bmp=eog
 alias -s pdf=evince
 alias -s kdbx=keepassx
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 # Add completions
 fpath=(~/.zsh/completions $fpath)
 autoload -U compinit && compinit
@@ -121,4 +124,3 @@ function google; {
     sensible-browser "http://www.google.com/search?q=`url-encode "${(j: :)@}"`"
 }
 
-bindkey '^R' history-incremental-search-backward
