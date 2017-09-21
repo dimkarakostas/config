@@ -111,7 +111,7 @@ alias -s out="tailf"
 alias -s png=eog
 alias -s jpg=eog
 alias -s bmp=eog
-alias -s pdf=evince
+alias -s pdf=xdg-open
 alias -s kdbx=keepassx
 
 bindkey -v
