@@ -99,7 +99,7 @@ pbpaste () {
 
 alias -s txt=vim
 alias -s log=vim
-alias -s html=sensible-browser
+alias -s html=firefox
 alias -s php=vim
 alias -s css=vim
 alias -s js=vim
