@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " <Vundle>
 set nocompatible
 filetype off
