@@ -106,7 +106,7 @@ nnoremap <silent> <C-t> :tabnew<CR>
 set nohidden
 
 " LaTeX stuff
-autocmd BufRead,BufNewFile *.tex set textwidth=80
+" autocmd BufRead,BufNewFile *.tex set textwidth=80
 
 " Markdown stuff
 autocmd BufRead,BufNewFile *.md set textwidth=80
