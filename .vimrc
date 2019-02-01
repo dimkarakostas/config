@@ -37,6 +37,12 @@ set expandtab smarttab softtabstop=4 shiftwidth=4
 " Line Numbers
 set number
 
+" Dark background setting for better colouring
+set background=dark
+
+" Set colorscheme
+colorscheme slate
+
 " Spell checking
 set spell
 
