@@ -37,6 +37,9 @@ set expandtab smarttab softtabstop=4 shiftwidth=4
 " Line Numbers
 set number
 
+" Spell checking
+set spell
+
 " No error sounds
 set noerrorbells novisualbell
 set t_vb=
