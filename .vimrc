@@ -44,6 +44,7 @@ set background=dark
 colorscheme slate
 
 " Spell checking
+set spelllang=en_us
 set spell
 
 " No error sounds
