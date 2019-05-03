@@ -115,6 +115,8 @@ nnoremap <silent> <C-t> :tabnew<CR>
 " Remove the buffer when closing tabs
 set nohidden
 
+set tabpagemax=100
+
 " LaTeX stuff
 " autocmd BufRead,BufNewFile *.tex set textwidth=80
 
