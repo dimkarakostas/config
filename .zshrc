@@ -97,18 +97,22 @@ pbpaste () {
     xclip -selection clipboard -o
 }
 
-alias -s txt=vim
-alias -s log=vim
-alias -s html=firefox
-alias -s php=vim
-alias -s css=vim
-alias -s js=vim
-alias -s sql=vim
-alias -s cpp=vim
-alias -s c=vim
-alias -s h=vim
-alias -s tex=vim
-alias -s out="tailf"
+mk () {
+    make "$@"
+}
+
+# alias -s txt=vim
+# alias -s log=vim
+alias -s html=xdg-open
+# alias -s php=vim
+# alias -s css=vim
+# alias -s js=vim
+# alias -s sql=vim
+# alias -s cpp=vim
+# alias -s c=vim
+# alias -s h=vim
+# alias -s tex=vim
+# alias -s out="tailf"
 alias -s png=eog
 alias -s jpg=eog
 alias -s bmp=eog
