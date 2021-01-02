@@ -7,10 +7,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
 set completeopt-=preview
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tomlion/vim-solidity'
+Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 " </Vundle>
@@ -45,7 +44,7 @@ colorscheme slate
 
 " Spell checking
 set spelllang=en_us
-set spell
+autocmd FileType latex,tex,md,markdown,txt setlocal spell
 
 " No error sounds
 set noerrorbells novisualbell
@@ -124,9 +123,9 @@ set tabpagemax=100
 autocmd BufRead,BufNewFile *.md set textwidth=80
 
 " Flake8
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
 let g:email = "dimit.karakostas@gmail.com"
 let g:username = "Dimitris Karakostas"
