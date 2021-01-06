@@ -133,7 +133,8 @@ else
   export EDITOR='mvim'
 fi
 
-function google; {
-    sensible-browser "http://www.google.com/search?q=`url-encode "${(j: :)@}"`"
-}
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
+alias python=python3
