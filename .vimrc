@@ -10,6 +10,7 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
 set completeopt-=preview
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'aperezdc/vim-template'
 call vundle#end()
 filetype plugin indent on
 " </Vundle>
