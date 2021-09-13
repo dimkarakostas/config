@@ -116,6 +116,8 @@ alias -s png=eog
 alias -s jpg=eog
 alias -s bmp=eog
 alias -s pdf=xdg-open
+alias -s ods=xdg-open
+alias -s odt=xdg-open
 alias -s kdbx=keepassx
 
 bindkey -v
