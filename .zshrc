@@ -80,6 +80,13 @@ allup () {
     sudo apt-get autoclean
 }
 
+purge () {
+    sudo apt-get purge "$*"
+    sudo apt-get update
+    sudo apt-get autoremove
+    sudo apt-get autoclean
+}
+
 fmanager () {
     xdg-open "$*"
 }
