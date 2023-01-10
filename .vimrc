@@ -124,9 +124,7 @@ set tabpagemax=100
 autocmd BufRead,BufNewFile *.md set textwidth=80
 
 " Flake8
-" autocmd BufWritePost *.py call Flake8()
-
-" execute pathogen#infect()
+autocmd BufWritePost *.py call flake8#Flake8()
 
 let g:email = "dimit.karakostas@gmail.com"
 let g:username = "Dimitris Karakostas"

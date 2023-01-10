@@ -145,4 +145,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+export PATH=$PATH:/usr/local/go/bin
+
 alias python=python3
+if [ -e /home/jim/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jim/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export PATH=$PATH:/home/jim/.local/bin
