@@ -89,12 +89,12 @@ autocmd BufReadPost *
 set viminfo^=%
 
 " Remove trailing whitespace in the file
-func! DeleteTrailingWS()
-    exe "normal mz"
-    %s/\s\+$//ge
-    exe "normal `z"
-endfunc
-autocmd BufWrite * :call DeleteTrailingWS()
+" func! DeleteTrailingWS()
+"     exe "normal mz"
+"     %s/\s\+$//ge
+"     exe "normal `z"
+" endfunc
+" autocmd BufWrite * :call DeleteTrailingWS()
 
 " Open URLs with Browser
 map <Leader>w :call iceweasel ()<CR>
